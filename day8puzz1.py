@@ -1,0 +1,1 @@
+with open('input.txt') as file: print(len(data := [el for el in (str([el[1].strip().split() for el in [line.strip().split('|') for line in file]]).replace("[",'').replace("]",'').replace("', '",' ').replace("'",'').split()) if len(el) in [2,3,4,7]]))

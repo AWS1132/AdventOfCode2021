@@ -3,8 +3,7 @@ example = [16,1,2,0,4,2,7,1,2,14]
 
 
 list = []
-total = max(data)
-for index in range(total):
+for index in range(min(data),max(data)):
     fuel = 0
     for crab in data:
         fuel += abs(crab-index)

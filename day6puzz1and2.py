@@ -5,7 +5,7 @@ school = [0,0,0,0,0,0,0,0,0]
 for fish in data:
     school[fish] += 1
 
-for i in range(10000000):
+for i in range(80):
     temp = [0,0,0,0,0,0,0,0,0]
     for j in range(9):
         if j == 0:

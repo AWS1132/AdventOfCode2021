@@ -2,12 +2,10 @@ data = [1101,1,29,67,1102,0,1,65,1008,65,35,66,1005,66,28,1,67,65,20,4,0,1001,65
 example = [16,1,2,0,4,2,7,1,2,14]
 
 list = []
-total = max(data)
-for index in range(total):
+for index in range(min(data),max(data)):
     totalfuel = 0
     for crab in data:
-        fuel = abs(crab-index)
-        totalfuel += fuel*(fuel+1)/2
+        totalfuel += abs(crab-index)*(abs(crab-index)+1)/2
     list.append(totalfuel)
 
 print(min(list))
